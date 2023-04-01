@@ -8,27 +8,43 @@ const Image = styled.img`
 `;
 export default function Reviews() {
     return (
-        <>
-            <Carousel variant="dark">
+        < >
+            <Carousel variant="dark" style={{margin:"20px 0px"}}>
                 <Carousel.Item>
                     <Image className="d-block w-100" src={back} />
                     <Carousel.Caption>
-                        <p>eligendi ab ipsa provident esse quas labore sapiente voluptatem et dolor mollitia velit distinctio illo!</p>
-                        <h5>person 1</h5>
+                        <p>
+                            Recently had the pleasure of working with Essential
+                            Exterior Cleaning , and I must say that their
+                            service was nothing short of exceptional. From start
+                            to finish, the team was professional, courteous, and
+                            extremely attentive to detail.
+                        </p>
+                        <h5>Conor North</h5>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image className="d-block w-100" src={back} />
                     <Carousel.Caption>
-                        <p>elit. Dignissimos sapiente totam dolorum recusandae a quia deserunt.</p>
-                        <h5>person 2</h5>
+                        <p>
+                            The EEC removed four years of moss, treated the
+                            roof, cleaned gutters and upper windows. Great work.
+                            Very professional and at a competitive rate. I’ll
+                            have them back when needed.
+                        </p>
+                        <h5>Mark Thane</h5>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image className="d-block w-100" src={back} />
                     <Carousel.Caption>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
-                        <h5>person 3</h5>
+                        <p>
+                            Very happy with the deep clean these guys did.
+                            George showed up on time, was very professional and
+                            cleaned up after the job was done. Best value in
+                            Victoria for any exterior work you need!
+                        </p>
+                        <h5>Lewis MacKinven</h5>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

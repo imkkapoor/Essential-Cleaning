@@ -1,70 +1,90 @@
 import React from "react";
 
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+const NavLeft = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
+const NavRight = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+`;
+const Container = styled.div`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+`;
 
 export default function NavigationBar() {
     return (
         <>
-            <Navbar bg="light" variant="light">
-                <Container>
-                    <Nav
-                        className="me-auto m-auto"
-                        style={{ display: "flex", alignItems: "center" }}
+            <Container>
+                <NavLeft>
+                    <div
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            justifyContent: "flex-end",
+                            marginRight:"20px",
+                            marginBottom:"10px"
+                        }}
                     >
-                        <Nav.Link style={{ padding: "0px" }}>
-                            <Link
-                                to="/"
-                                style={{
-                                    textDecoration: "none",
-                                    color: "inherit",
-                                }}
-                            >
-                                <img
-                                    src="https://drive.google.com/uc?export=view&id=1WvyzDdptiv3itoUYwjYkd46sKx95LMyf"
-                                    style={{ height: "10vh" }}
-                                    alt = "logo"
-                                />
-                            </Link>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <Link
-                                to="/about"
-                                style={{
-                                    textDecoration: "none",
-                                    color: "inherit",
-                                }}
-                            >
-                                About
-                            </Link>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <Link
-                                to="/pricing"
-                                style={{
-                                    textDecoration: "none",
-                                    color: "inherit",
-                                }}
-                            >
-                                Pricing
-                            </Link>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <Link
-                                to="/services"
-                                style={{
-                                    textDecoration: "none",
-                                    color: "inherit",
-                                }}
-                            >
-                                Services
-                            </Link>
-                        </Nav.Link>
-                    </Nav>
-                </Container>
-            </Navbar>
+                        <h4 style={{marginBottom:"0px", fontSize:"22px"}}>Essential</h4>
+                        <p style={{fontSize:"14px"}}>Exterior Cleaning</p>
+                    </div>
+                    <Link
+                        to="/"
+                        style={{
+                            textDecoration: "none",
+                            color: "inherit",
+                        }}
+                    >
+                        <img
+                            src="https://drive.google.com/uc?export=view&id=1WvyzDdptiv3itoUYwjYkd46sKx95LMyf"
+                            style={{ height: "19vh" }}
+                            alt="logo"
+                        />
+                    </Link>
+                </NavLeft>
+
+                <NavRight>
+                    <Link
+                        to="/about"
+                        style={{
+                            textDecoration: "none",
+                            color: "inherit",
+                            margin: "10px",
+                        }}
+                    >
+                        About
+                    </Link>
+
+                    <Link
+                        to="/pricing"
+                        style={{
+                            textDecoration: "none",
+                            color: "inherit",
+                            margin: "10px",
+                        }}
+                    >
+                        Pricing
+                    </Link>
+
+                    <Link
+                        to="/services"
+                        style={{
+                            textDecoration: "none",
+                            color: "inherit",
+                            margin: "10px",
+                        }}
+                    >
+                        Services
+                    </Link>
+                </NavRight>
+            </Container>
         </>
     );
 }

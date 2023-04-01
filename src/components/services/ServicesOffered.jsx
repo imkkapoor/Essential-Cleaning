@@ -6,16 +6,20 @@ const Wrapper = styled.div`
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    padding:20px 0px;
+    background-color: #ededed;
 `;
 
 const ServiceHeader = styled.div`
-    font-size: 23px;
-    text-align:center;
+    font-size: 20px;
+    text-align: center;
+    font-weight:bold;
+    padding-bottom:3px;
 `;
 const ServiceDesc = styled.div`
     font-size: 15px;
-    text-align:center;
-    margin: 0px 20px
+    text-align: center;
+    padding: 0px 40px;
 `;
 
 export default function ServicesOffered() {
@@ -35,6 +39,13 @@ export default function ServicesOffered() {
                     A Glass surface can deteriorate if left unmaintained. Get
                     streak-free, shiney windows to let all the light into your
                     life.
+                </ServiceDesc>
+            </div>
+            <div>
+                <ServiceHeader>GUTTER CLEANING</ServiceHeader>
+                <ServiceDesc>
+                    Dirty gutters can cause many issues from water damage to
+                    clogged perimeter drains that can be expensive to repair.
                 </ServiceDesc>
             </div>
         </Wrapper>

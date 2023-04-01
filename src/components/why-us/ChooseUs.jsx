@@ -3,13 +3,17 @@ import styled from "styled-components";
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
-    margin-right:10px;
-    margin-left:10px;
+    padding-bottom: 30px;
+    padding-right:10px;
+    padding-left:10px;
+    background-color: #ededed;
 `;
 const Head = styled.div`
     text-align: center;
-    margin: 10px;
+    padding: 10px;
+    font-size:22px;
+    font-weight:bold;
+    padding-top:15px;
 `;
 const Container = styled.div`
     display: flex;
@@ -33,7 +37,7 @@ const Fourth = styled.div`
 export default function ChooseUs() {
     return (
         <Wrapper>
-            <Head>Why choose us</Head>
+            <Head>WHY US?</Head>
             <Container>
                 <First>Reliable & Honest</First>
                 <Second>Environment Friendly Cleaning</Second>

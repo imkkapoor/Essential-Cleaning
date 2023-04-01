@@ -12,5 +12,7 @@ const Right = styled.div`
 `;
 
 export default function ServiceBanner() {
-    return <></>;
+    return <>
+        <Container></Container>
+    </>;
 }
