@@ -6,6 +6,7 @@ import ChooseUs from "../components/why-us/ChooseUs";
 import ServicesOffered from "../components/services/ServicesOffered";
 import Reviews from "../components/reviews/Reviews";
 import Footer from "../components/footer/Footer";
+import About from "../components/about/About";
 
 const CallUsAt = styled.div`
     font-size: 20px;
@@ -33,6 +34,7 @@ export default function Home() {
                     (250) 263-4283
                 </a>
             </CallUsAt>
+            <About/>
             <ServicesOffered />
             <Reviews />
             <ChooseUs />

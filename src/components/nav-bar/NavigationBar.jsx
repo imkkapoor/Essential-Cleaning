@@ -65,7 +65,7 @@ export default function NavigationBar() {
                     >
                         Home
                     </Link>
-                    <Link
+                    {/* <Link
                         to="/about"
                         style={{
                             textDecoration: "none",
@@ -76,7 +76,7 @@ export default function NavigationBar() {
                         }}
                     >
                         About
-                    </Link>
+                    </Link> */}
 
                     <Link
                         to="/services"
