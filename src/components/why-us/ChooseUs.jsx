@@ -39,10 +39,10 @@ export default function ChooseUs() {
         <Wrapper>
             <Head>WHY US?</Head>
             <Container>
-                <First>Reliable & Honest</First>
-                <Second>Environment Friendly Cleaning</Second>
-                <Third>100% Satisfaction Gurannted</Third>
-                <Fourth>Best Prices in the Market</Fourth>
+                <First>Reliable & Honest</First>|
+                <Second>Environment Friendly Cleaning</Second>|
+                <Third>100% Satisfaction Gurannted</Third>|
+                <Fourth>Best Prices on the Market</Fourth>
             </Container>
         </Wrapper>
     );

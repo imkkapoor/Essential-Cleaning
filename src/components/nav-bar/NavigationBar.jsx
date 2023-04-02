@@ -28,12 +28,14 @@ export default function NavigationBar() {
                             flexDirection: "column",
                             alignItems: "center",
                             justifyContent: "flex-end",
-                            marginRight:"20px",
-                            marginBottom:"10px"
+                            marginRight: "20px",
+                            marginBottom: "10px",
                         }}
                     >
-                        <h4 style={{marginBottom:"0px", fontSize:"22px"}}>Essential</h4>
-                        <p style={{fontSize:"14px"}}>Exterior Cleaning</p>
+                        {/* <h4 style={{ marginBottom: "0px", fontSize: "22px" }}>
+                            Essential
+                        </h4>
+                        <p style={{ fontSize: "14px" }}>Exterior Cleaning</p> */}
                     </div>
                     <Link
                         to="/"
@@ -52,25 +54,28 @@ export default function NavigationBar() {
 
                 <NavRight>
                     <Link
+                        to="/"
+                        style={{
+                            textDecoration: "none",
+                            color: "inherit",
+                            margin: "10px",
+                            display: "flex",
+                            alignItems: "center",
+                        }}
+                    >
+                        Home
+                    </Link>
+                    <Link
                         to="/about"
                         style={{
                             textDecoration: "none",
                             color: "inherit",
                             margin: "10px",
+                            display: "flex",
+                            alignItems: "center",
                         }}
                     >
                         About
-                    </Link>
-
-                    <Link
-                        to="/pricing"
-                        style={{
-                            textDecoration: "none",
-                            color: "inherit",
-                            margin: "10px",
-                        }}
-                    >
-                        Pricing
                     </Link>
 
                     <Link
@@ -79,9 +84,25 @@ export default function NavigationBar() {
                             textDecoration: "none",
                             color: "inherit",
                             margin: "10px",
+                            display: "flex",
+                            alignItems: "center",
                         }}
                     >
                         Services
+                    </Link>
+
+                    <Link
+                        to="/pricing"
+                        style={{
+                            textDecoration: "none",
+                            margin: "10px",
+                            backgroundColor: "#2d5a9b",
+                            color: "white",
+                            padding: "6px 10px",
+                            borderRadius: "9px",
+                        }}
+                    >
+                        Get Your FREE Quote
                     </Link>
                 </NavRight>
             </Container>
