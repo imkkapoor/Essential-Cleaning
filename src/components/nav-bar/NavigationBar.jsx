@@ -37,6 +37,9 @@ const CallUsAt = styled.a`
     @media screen and (max-width: 600px) {
         margin: 0px;
     }
+    :hover{
+        color:black;
+    }
 `;
 
 export default function NavigationBar() {

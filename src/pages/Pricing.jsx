@@ -2,20 +2,35 @@ import React from "react";
 import NavigationBar from "../components/nav-bar/NavigationBar";
 import Footer from "../components/footer/Footer";
 import ChooseUs from "../components/why-us/ChooseUs";
+import styled from "styled-components";
+
+const InputForm = styled.form`
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30vw 30px 30vw;
+    font-size: 14px;
+    @media screen and (max-width: 600px) {
+        margin: 10px 10vw 30px 10vw;
+    }
+`;
+
+const Header = styled.div`
+    text-align:center;
+    color:"black";
+    font-size: 22px;
+    font-weight:600;
+
+`;
 
 export default function Pricing() {
     return (
         <>
             <NavigationBar />
-            <form
+            <Header>Get your free quote now!</Header>
+            <InputForm
                 action="https://formsubmit.co/office@essentialexteriorcleaning.com"
                 method="POST"
-                style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    margin: "30px 30vw",
-                    fontSize: "14px",
-                }}
+                style={{}}
             >
                 <input
                     type="text"
@@ -53,6 +68,16 @@ export default function Pricing() {
                     }}
                 />
                 <input
+                    name="address"
+                    placeholder="Address"
+                    style={{
+                        margin: "4px 0px 4px 0px",
+                        padding: "7px",
+                        borderRadius: "2px",
+                        border: "1px solid gray",
+                    }}
+                />
+                <input
                     name="text"
                     placeholder="Your Message"
                     style={{
@@ -77,7 +102,7 @@ export default function Pricing() {
                 >
                     SUBMIT
                 </button>
-            </form>
+            </InputForm>
 
             <ChooseUs />
             <Footer />

@@ -77,7 +77,7 @@ export default function Footer() {
                         </a>
                         <a href="#fb">
                             <FacebookIcon
-                                style={{ width: "24px", height: "24px" }}
+                                style={{ width: "25px", height: "25px", color:"white" }}
                             />
                         </a>
                         <a href="#tiktok">
