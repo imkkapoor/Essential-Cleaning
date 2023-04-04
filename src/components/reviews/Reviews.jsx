@@ -5,17 +5,21 @@ import back from "./white-blank.jpg";
 
 const Image = styled.img`
     height: 30vh;
+    @media screen and (max-width: 642px) {
+        height: 35vh;       
+    }
+    
+  
 `;
 export default function Reviews() {
     return (
         < >
-            <Carousel variant="dark" style={{margin:"20px 0px"}}>
+            <Carousel variant="dark" >
                 <Carousel.Item>
                     <Image className="d-block w-100" src={back} />
                     <Carousel.Caption>
                         <p>
-                            Recently had the pleasure of working with Essential
-                            Exterior Cleaning , and I must say that their
+                            Recently had the pleasure of working with EEC and their
                             service was nothing short of exceptional. From start
                             to finish, the team was professional, courteous, and
                             extremely attentive to detail.

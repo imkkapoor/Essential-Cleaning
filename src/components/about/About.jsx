@@ -8,7 +8,9 @@ const Text = styled.div`
     padding: 50px 100px;
     text-align:center;
     padding-top:10px;
-    
+    @media screen and (max-width: 600px) {
+        padding: 10px 15px 30px 15px;
+    }
 `;
 export default function About() {
     return (

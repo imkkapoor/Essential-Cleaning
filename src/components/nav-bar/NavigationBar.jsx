@@ -1,7 +1,16 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+
+
+const Container = styled.div`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+`;
 
 const NavLeft = styled.div`
     display: flex;
@@ -11,20 +20,17 @@ const NavLeft = styled.div`
 const NavCenter = styled.div`
     display: flex;
     justify-content: space-evenly;
+    @media screen and (max-width: 600px) {
+        background-color:#ededed;
+        width:100%;
+    }
 `;
 
 const NavRight = styled.div`
     display: flex;
     justify-content: space-evenly;
 `;
-const Container = styled.div`
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    @media screen and (max-width: 600px) {
-        flex-direction: column;
-    }
-`;
+
 const CallUsAt = styled.a`
     font-size: 20px;
     text-align: center;
