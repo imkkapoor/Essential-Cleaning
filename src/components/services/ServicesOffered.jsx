@@ -8,6 +8,9 @@ const Wrapper = styled.div`
     align-items: center;
     padding:20px 0px;
     background-color: #ededed;
+    @media screen and (max-width:600px){
+        flex-direction:column;
+    }
 `;
 
 const ServiceHeader = styled.div`
@@ -15,11 +18,17 @@ const ServiceHeader = styled.div`
     text-align: center;
     font-weight:bold;
     padding-bottom:3px;
+    @media screen and (max-width:600px){
+        margin:10px 0px 0px 0px;
+    }
 `;
 const ServiceDesc = styled.div`
     font-size: 15px;
     text-align: center;
     padding: 0px 40px;
+    @media screen and (max-width:600px){
+        margin:0px 0px 10px 0px;
+    }
 `;
 
 export default function ServicesOffered() {

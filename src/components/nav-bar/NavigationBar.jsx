@@ -7,6 +7,12 @@ const NavLeft = styled.div`
     display: flex;
     flex-direction: row;
 `;
+
+const NavCenter = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+`;
+
 const NavRight = styled.div`
     display: flex;
     justify-content: space-evenly;
@@ -15,6 +21,22 @@ const Container = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+`;
+const CallUsAt = styled.a`
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px 0px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    @media screen and (max-width: 600px) {
+        margin: 0px;
+    }
 `;
 
 export default function NavigationBar() {
@@ -52,7 +74,7 @@ export default function NavigationBar() {
                     </Link>
                 </NavLeft>
 
-                <NavRight>
+                <NavCenter>
                     <Link
                         to="/"
                         style={{
@@ -96,14 +118,17 @@ export default function NavigationBar() {
                         style={{
                             textDecoration: "none",
                             margin: "10px",
-                            backgroundColor: "#2d5a9b",
-                            color: "white",
-                            padding: "6px 10px",
-                            borderRadius: "9px",
+                            // backgroundColor: "#2d5a9b",
+                            color: "black",
+                            // padding: "6px 10px",
+                            // borderRadius: "9px",
                         }}
                     >
-                        Get Your FREE Quote
+                        Pricing
                     </Link>
+                </NavCenter>
+                <NavRight>
+                    <CallUsAt href="tel:2502634283">(250) 263-4283</CallUsAt>
                 </NavRight>
             </Container>
         </>

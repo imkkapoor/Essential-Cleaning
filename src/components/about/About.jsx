@@ -13,12 +13,12 @@ const Text = styled.div`
 export default function About() {
     return (
         <>
-        <h3 style={{textAlign:"center"}}>About Us</h3>
+        <h3 style={{textAlign:"center", paddingTop:"30px"}}>About Us</h3>
         <Text>
             Welcome to Essential Exterior Cleaning Victoria, your go-to company
             for all your exterior cleaning needs. We are a locally owned and
             operated business dedicated to providing top-quality services to
-            Greater Victoria.
+            Greater Victoria and surrounding areas.
             <br></br>
             <br></br>
             Our team specializes in pressure washing, exterior window cleaning,
