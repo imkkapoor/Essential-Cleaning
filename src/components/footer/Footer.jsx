@@ -75,12 +75,12 @@ export default function Footer() {
                         >
                             <InstagramIcon />
                         </a>
-                        <a>
+                        <a href="#fb">
                             <FacebookIcon
                                 style={{ width: "24px", height: "24px" }}
                             />
                         </a>
-                        <a>
+                        <a href="#tiktok">
                             <img
                                 src={TiktokIcon}
                                 style={{
