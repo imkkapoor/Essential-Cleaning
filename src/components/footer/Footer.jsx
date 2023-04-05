@@ -75,12 +75,12 @@ export default function Footer() {
                         >
                             <InstagramIcon />
                         </a>
-                        <a href="#fb">
+                        <a href="https://www.facebook.com/profile.php?id=100091646640264">
                             <FacebookIcon
                                 style={{ width: "25px", height: "25px", color:"white" }}
                             />
                         </a>
-                        <a href="#tiktok">
+                        <a href="https://www.tiktok.com/@essentialexteriorcleanin">
                             <img
                                 src={TiktokIcon}
                                 style={{

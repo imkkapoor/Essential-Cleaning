@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import AdBanner from './Header-Banner-ServiceSub.jpg'
+import AdBanner from './gallery-modern-landscape-01.jpg'
 const FrontImage = styled.div`
     
     background-color: black;

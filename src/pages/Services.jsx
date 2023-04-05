@@ -1,18 +1,9 @@
 import React from "react";
-import NavigationBar from "../components/nav-bar/NavigationBar";
 import styled from "styled-components";
 import Footer from "../components/footer/Footer";
 import ChooseUs from "../components/why-us/ChooseUs";
+import NavBarLine from "../components/nav-bar/NavBarLine";
 
-const ServiceHeader = styled.div`
-    height: 12vh;
-    display: flex;
-    align-items: center;
-    color: white;
-    background-color: #2d5a9b;
-    justify-content: center;
-    font-size: 40px;
-`;
 
 const Container = styled.div`
     display: flex;
@@ -49,8 +40,8 @@ const Image = styled.img`
 export default function Services() {
     return (
         <>
-            <NavigationBar />
-            <ServiceHeader>Services</ServiceHeader>
+            <NavBarLine header = "Services"/>
+            {/* <ServiceHeader>Services</ServiceHeader> */}
             <Container>
                 <ImageWrapper>
                     <Image src="https://drive.google.com/uc?export=view&id=1MrJzwdfhhw83m2olMbGshTonC109zz5c"></Image>

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -7,11 +7,15 @@ const NavBar = styled.div`
     justify-content: space-around;
     align-items: center;
     color: white;
+    
     font-weight: 600;
+    
     position: sticky;
     @media screen and (max-width: 600px) {
         flex-direction: column;
     }
+
+    
 `;
 
 const Overlay = styled.div`
@@ -32,27 +36,18 @@ const Container = styled.div`
     @media screen and (max-width: 600px) {
         flex-direction: column;
     }
+    position:relative;
     background: url("https://drive.google.com/uc?id=1cj1_TmhFXW5UqNl-Ug4IXONK-mb8IBCP")
         no-repeat;
     background-size: cover;
-    height: 100vh;
-    background-position: left;
+    height: 55vh;
+    background-position: top;
     position: relative;
     font-size: 20px;
 `;
 
-const OurHeader = styled.div`
-    /* position: absolute; */
-    /* left: 5vw;
-    right: 5vw; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* top: 20vh; */
-    z-index: 100;
-`;
 
-const Left = styled.div`
+const NavLeft = styled.div`
     display: flex;
     justify-content: space-evenly;
     @media screen and (max-width: 600px) {
@@ -60,9 +55,11 @@ const Left = styled.div`
     }
 `;
 
-const Right = styled.div`
+const NavRight = styled.div`
     display: flex;
     justify-content: space-evenly;
+   
+
 `;
 
 const CallUsAt = styled.a`
@@ -73,7 +70,7 @@ const CallUsAt = styled.a`
     margin: 10px 0px;
     color: white;
     text-decoration: none;
-    font-weight:  font-weight: 600;;
+    font-weight: 600;
     @media screen and (max-width: 600px) {
         margin: 0px;
     }
@@ -82,53 +79,32 @@ const CallUsAt = styled.a`
     }
 `;
 
+
 const TextHeader = styled.div`
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    color: white;
-    font-family: "Canela Text Trial", sans-serif;
-    margin-top: -7vh;
-    @media screen and (max-width: 638px) {
-        margin-top: 0vh;
-        font-size: 28px;
-    }
-`;
+    position:absolute;
+    text-align:center;
+    top:26vh;
+    left:10vw;
+    right:10vw;
+    font-size: 50px;
+    font-weight:bold;
+    color:white;
+    font-family: 'Canela Text Trial', sans-serif;
+   
+ `
 
-const GetYourQuote = styled.div`
-    text-align: center;
-    margin-top: 3vh;
-`;
 
-const GetYourQuoteButton = styled.a`
-    font-size: 20px;
-    padding: 8px 13px 8px 13px;
-    background-color: #2d5a9b;
-    color: white;
-    border-radius: 18px;
-    font-weight: 500;
-    text-decoration: none;
-    :hover {
-        color: #e6e6e6;
-    }
-`;
 
-const MainWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 14vh;
-    left: 5vw;
-    right: 5vw;
-`;
 
-export default function NavigationBar() {
-    return (
-        <>
+
+
+export default function NavBarLine(props) {
+  return (
+    <>
             <Container>
                 <Overlay>
                     <NavBar>
-                        <Left>
+                        <NavLeft>
                             <Link
                                 to="/"
                                 style={{
@@ -161,7 +137,7 @@ export default function NavigationBar() {
                                     textDecoration: "none",
                                     margin: "10px",
                                     color: "white",
-                                    // color: "#2d5a9b",
+                                   
                                 }}
                             >
                                 Pricing
@@ -173,35 +149,24 @@ export default function NavigationBar() {
                                     textDecoration: "none",
                                     margin: "10px",
                                     color: "white",
-                                    // color: "#2d5a9b",
+                                    
                                 }}
                             >
                                 Gallery
                             </Link> */}
-                        </Left>
-                        <Right>
+                        </NavLeft>
+                        <NavRight>
                             <CallUsAt href="tel:2502634283">
                                 (250) 263-4283
                             </CallUsAt>
-                        </Right>
+                        </NavRight>
                     </NavBar>
                 </Overlay>
+                <TextHeader>{props.header}</TextHeader>
             </Container>
-            <MainWrapper>
-                <OurHeader>
-                    <img
-                        src="https://drive.google.com/uc?id=1vtGzPwayrHC8YzI3L7cIA_xztFaB4Bq9"
-                        alt="ad banner"
-                        style={{ height: "46vh" }}
-                    />
-                </OurHeader>
-                <TextHeader>Refresh your home's first impression</TextHeader>
-                <GetYourQuote>
-                    <GetYourQuoteButton href="/pricing">
-                        Get Your Quote Now
-                    </GetYourQuoteButton>
-                </GetYourQuote>
-            </MainWrapper>
+            
+            
+            {/* <GetYourQuote> Get Your Quote Now</GetYourQuote> */}
         </>
-    );
+  )
 }
