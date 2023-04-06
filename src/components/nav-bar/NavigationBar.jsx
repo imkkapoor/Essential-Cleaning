@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import "./ColorChange.css";
 
 const NavBar = styled.div`
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: white;
     font-weight: 600;
-    position: sticky;
+    top: 0;
+    transition: background-color 0.5s ease;
     @media screen and (max-width: 600px) {
         flex-direction: column;
     }
+    z-index :200;
 `;
 
 const Overlay = styled.div`
@@ -71,7 +76,7 @@ const CallUsAt = styled.a`
     padding: 10px;
 
     margin: 10px 0px;
-    color: white;
+    /* color: white; */
     text-decoration: none;
     font-weight:  font-weight: 600;;
     @media screen and (max-width: 600px) {
@@ -123,20 +128,40 @@ const MainWrapper = styled.div`
 `;
 
 export default function NavigationBar() {
+    const [isTransparent, setIsTransparent] = useState(true);
+
+    useEffect(() => {
+        function handleScroll() {
+            const scrolled = window.scrollY;
+            if (scrolled > 0 && isTransparent) {
+                setIsTransparent(false);
+            } else if (scrolled === 0 && !isTransparent) {
+                setIsTransparent(true);
+            }
+        }
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [isTransparent]);
+
     return (
         <>
             <Container>
                 <Overlay>
-                    <NavBar>
+                    <NavBar className={isTransparent ? "transparent" : "solid"}>
                         <Left>
                             <Link
                                 to="/"
+                                className={isTransparent ? "transparent-text" : "solid-text"}
                                 style={{
                                     textDecoration: "none",
-                                    color: "inherit",
                                     margin: "10px",
                                     display: "flex",
                                     alignItems: "center",
+                                    transition:"background-color 0.5s ease"
                                 }}
                             >
                                 Home
@@ -144,12 +169,13 @@ export default function NavigationBar() {
 
                             <Link
                                 to="/services"
+                                className={isTransparent ? "transparent-text" : "solid-text"}
                                 style={{
                                     textDecoration: "none",
-                                    color: "inherit",
                                     margin: "10px",
                                     display: "flex",
                                     alignItems: "center",
+                                    transition:"background-color 0.5s ease"
                                 }}
                             >
                                 Services
@@ -157,30 +183,30 @@ export default function NavigationBar() {
 
                             <Link
                                 to="/pricing"
+                                className={isTransparent ? "transparent-text" : "solid-text"}
                                 style={{
                                     textDecoration: "none",
                                     margin: "10px",
-                                    color: "white",
-                                    // color: "#2d5a9b",
+                                    transition:"background-color 0.5s ease"
                                 }}
                             >
                                 Pricing
                             </Link>
 
-                            {/* <Link
+                            <Link
                                 to="/gallery"
+                                className={isTransparent ? "transparent-text" : "solid-text"}
                                 style={{
                                     textDecoration: "none",
                                     margin: "10px",
-                                    color: "white",
-                                    // color: "#2d5a9b",
+                                    transition:"background-color 0.5s ease"
                                 }}
                             >
                                 Gallery
-                            </Link> */}
+                            </Link>
                         </Left>
                         <Right>
-                            <CallUsAt href="tel:2502634283">
+                            <CallUsAt href="tel:2502634283"  className={isTransparent ? "transparent-text" : "solid-text"}>
                                 (250) 263-4283
                             </CallUsAt>
                         </Right>

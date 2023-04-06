@@ -83,7 +83,7 @@ export default function Pricing() {
                         <br></br>
                         <br></br>
                         <h4>Areas We Work:</h4>
-                        Nanaimo, Duncan, Parksville,Langford and more!
+                        Nanaimo, Duncan, Parksville, Langford and more!
                     </LeftIn>
                 </Left>
                 <Right>

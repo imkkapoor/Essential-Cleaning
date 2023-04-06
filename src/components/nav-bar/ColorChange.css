@@ -1,0 +1,15 @@
+.transparent {
+    background-color: transparent;
+}
+
+.solid {
+    background-color: #fff;
+}
+
+.transparent-text {
+    color: white;
+}
+
+.solid-text {
+    color: black;
+}

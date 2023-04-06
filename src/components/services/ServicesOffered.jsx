@@ -1,62 +1,100 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding:20px 0px;
+    padding: 20px 0px;
     background-color: #ededed;
-    @media screen and (max-width:600px){
-        flex-direction:column;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
     }
 `;
 
 const ServiceHeader = styled.div`
+    position: absolute;
+    color: black;
     font-size: 20px;
+    width: 37.5vh;
     text-align: center;
-    font-weight:bold;
-    padding-bottom:3px;
-    @media screen and (max-width:600px){
-        margin:10px 0px 0px 0px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    top: 48%;
+    color: white;
+    background-color: #6d6d6d;
+    @media screen and (max-width: 600px) {
+        margin: 10px 0px 0px 0px;
     }
 `;
-const ServiceDesc = styled.div`
-    font-size: 15px;
-    text-align: center;
-    padding: 0px 40px;
-    @media screen and (max-width:600px){
-        margin:0px 0px 10px 0px;
-    }
+
+const EachContainer = styled.div`
+    display: flex;
+    align-content: center;
 `;
 
 export default function ServicesOffered() {
     return (
-        <Wrapper>
-            <div>
-                <ServiceHeader>PRESSURE WASHING</ServiceHeader>
-                <ServiceDesc>
-                    Using just water, we can revive your driveway, brighten your
-                    siding or get rid of that slippery moss plaguing your
-                    walkways.
-                </ServiceDesc>
-            </div>
-            <div>
-                <ServiceHeader>WINDOW WASHING</ServiceHeader>
-                <ServiceDesc>
-                    A Glass surface can deteriorate if left unmaintained. Get
-                    streak-free, shiney windows to let all the light into your
-                    life.
-                </ServiceDesc>
-            </div>
-            <div>
-                <ServiceHeader>GUTTER CLEANING</ServiceHeader>
-                <ServiceDesc>
-                    Dirty gutters can cause many issues from water damage to
-                    clogged perimeter drains that can be expensive to repair.
-                </ServiceDesc>
-            </div>
-        </Wrapper>
+        <>
+            <Wrapper>
+                <Link to="/services">
+                    <EachContainer>
+                        <ServiceHeader>PRESSURE WASHING</ServiceHeader>
+                        <img
+                            src="https://drive.google.com/uc?export=view&id=18AOXGEGDJDmqzrz9tEJ9lSlkN1LdrHHT"
+                            style={{ height: "50vh" }}
+                            alt="service-banner"
+                        />
+                    </EachContainer>
+                </Link>
+                <Link to="/services">
+                    <EachContainer>
+                        <ServiceHeader>WINDOW WASHING</ServiceHeader>
+                        <img
+                            src="https://drive.google.com/uc?export=view&id=1xL7NUYvKwdz87rbpx6G7FAvCLOefOUKI"
+                            style={{ height: "50vh" }}
+                            alt="service-banner"
+                        />
+                    </EachContainer>
+                </Link>
+
+                <Link to="/services">
+                    <EachContainer>
+                        <ServiceHeader>GUTTER CLEANING</ServiceHeader>
+                        <img
+                            src="https://drive.google.com/uc?export=view&id=1U4hwtaG3JWp0sv91uE-PxzEVfdd6nvec"
+                            style={{ height: "50vh" }}
+                            alt="service-banner"
+                        />
+                    </EachContainer>
+                </Link>
+            </Wrapper>
+            <Wrapper>
+                <Link to="/services">
+                    <EachContainer>
+                        <ServiceHeader>MOSS REMOVAL</ServiceHeader>
+                        <img
+                            src="https://drive.google.com/uc?export=view&id=18ektRGag5xMLzeiR_M8NPv3z3e_4rH7v"
+                            style={{ height: "50vh" }}
+                            alt="service-banner"
+                        />
+                    </EachContainer>
+                </Link>
+
+                <Link to="/services">
+                    <EachContainer>
+                        <ServiceHeader>EXTERIOR WASHING</ServiceHeader>
+                        <img
+                            src="https://drive.google.com/uc?export=view&id=1ewIurVTWb1LskqqQrXV_nVBQw_H2fQnY"
+                            style={{ height: "50vh" }}
+                            alt="service-banner"
+                        />
+                    </EachContainer>
+                </Link>
+            </Wrapper>
+        </>
     );
 }
