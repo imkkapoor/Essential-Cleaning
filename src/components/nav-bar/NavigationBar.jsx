@@ -78,7 +78,7 @@ const CallUsAt = styled.a`
     margin: 10px 0px;
     /* color: white; */
     text-decoration: none;
-    font-weight:  font-weight: 600;;
+    font-weight: 600;
     @media screen and (max-width: 600px) {
         margin: 0px;
     }
@@ -224,7 +224,8 @@ export default function NavigationBar() {
                 <TextHeader>Refresh your home's first impression</TextHeader>
                 <GetYourQuote>
                     <GetYourQuoteButton>
-                        <Link to="/pricing">
+                        <Link to="/pricing" style={{
+                                    textDecoration: "none", color:"white"}}>
                         GET YOUR FREE ESTIMATE
                         </Link>
                     </GetYourQuoteButton>

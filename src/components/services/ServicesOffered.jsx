@@ -1,14 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
+const Container = styled.div`
+    padding: 20px;
+    background-color: #ededed;
+`;
 const Wrapper = styled.div`
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px 0px;
+    padding: 0px 0px;
+    flex-wrap: wrap;
     background-color: #ededed;
     @media screen and (max-width: 600px) {
         flex-direction: column;
@@ -23,7 +27,7 @@ const ServiceHeader = styled.div`
     text-align: center;
     font-weight: bold;
     padding-bottom: 3px;
-    top: 48%;
+    /* top: 48%; */
     color: white;
     background-color: #6d6d6d;
     @media screen and (max-width: 600px) {
@@ -34,11 +38,18 @@ const ServiceHeader = styled.div`
 const EachContainer = styled.div`
     display: flex;
     align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+    @media screen and (max-width: 716px) {
+        flex-direction: column;
+    }
 `;
 
 export default function ServicesOffered() {
     return (
-        <>
+        <Container>
             <Wrapper>
                 <Link to="/services">
                     <EachContainer>
@@ -95,6 +106,6 @@ export default function ServicesOffered() {
                     </EachContainer>
                 </Link>
             </Wrapper>
-        </>
+        </Container>
     );
 }
