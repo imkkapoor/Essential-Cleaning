@@ -64,7 +64,7 @@ export default function Footer() {
         <>
             <ContactWrapper>
                 <FindUsOn>
-                    <h6>Find Us</h6>
+                    <h6>Find Us On</h6>
                     <SocialContainer>
                         <a
                             href="https://www.instagram.com/essential.exterior.cleaning/"

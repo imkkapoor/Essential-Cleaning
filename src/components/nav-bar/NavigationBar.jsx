@@ -17,6 +17,9 @@ const NavBar = styled.div`
         flex-direction: column;
     }
     z-index :200;
+    :hover {
+        color: #e6e6e6;
+    }
 `;
 
 const Overlay = styled.div`
@@ -47,13 +50,11 @@ const Container = styled.div`
 `;
 
 const OurHeader = styled.div`
-    /* position: absolute; */
-    /* left: 5vw;
-    right: 5vw; */
+   
     display: flex;
     align-items: center;
     justify-content: center;
-    /* top: 20vh; */
+ 
     z-index: 100;
 `;
 
@@ -62,6 +63,9 @@ const Left = styled.div`
     justify-content: space-evenly;
     @media screen and (max-width: 600px) {
         margin-top: 10px;
+    }
+    :hover {
+        color: #e6e6e6;
     }
 `;
 
@@ -76,7 +80,7 @@ const CallUsAt = styled.a`
     padding: 10px;
 
     margin: 10px 0px;
-    /* color: white; */
+    
     text-decoration: none;
     font-weight: 600;
     @media screen and (max-width: 600px) {

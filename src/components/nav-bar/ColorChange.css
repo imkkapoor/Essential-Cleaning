@@ -9,7 +9,14 @@
 .transparent-text {
     color: white;
 }
+.transparent a:hover {
+    color: #e6e6e6;
+}
+.solid a:hover {
+    color: #575757;
+}
 
 .solid-text {
     color: black;
 }
+
