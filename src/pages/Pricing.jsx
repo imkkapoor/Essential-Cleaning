@@ -83,7 +83,7 @@ export default function Pricing() {
                         <br></br>
                         <br></br>
                         <h4>Areas We Work:</h4>
-                        Nanaimo, Duncan, Parksville, Langford and more!
+                        Victoria and surrounding areas!
                     </LeftIn>
                 </Left>
                 <Right>

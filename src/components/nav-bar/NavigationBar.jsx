@@ -90,10 +90,10 @@ const CallUsAt = styled.a`
 const TextHeader = styled.div`
     text-align: center;
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 600;
     color: white;
-    font-family: "Canela Text Trial", sans-serif;
-    margin-top: -7vh;
+    
+    margin-top: -5vh;
     @media screen and (max-width: 638px) {
         margin-top: 0vh;
         font-size: 28px;
@@ -102,12 +102,12 @@ const TextHeader = styled.div`
 
 const GetYourQuote = styled.div`
     text-align: center;
-    margin-top: 3vh;
+    margin-top: 4.6vh;
 `;
 
 const GetYourQuoteButton = styled.a`
     font-size: 20px;
-    padding: 8px 13px 8px 13px;
+    padding: 10px 16px 10px 16px;
     background-color: #2d5a9b;
     color: white;
     border-radius: 18px;
@@ -223,8 +223,10 @@ export default function NavigationBar() {
                 </OurHeader>
                 <TextHeader>Refresh your home's first impression</TextHeader>
                 <GetYourQuote>
-                    <GetYourQuoteButton href="/pricing">
-                        Get Your Quote Now
+                    <GetYourQuoteButton>
+                        <Link to="/pricing">
+                        GET YOUR FREE ESTIMATE
+                        </Link>
                     </GetYourQuoteButton>
                 </GetYourQuote>
             </MainWrapper>
