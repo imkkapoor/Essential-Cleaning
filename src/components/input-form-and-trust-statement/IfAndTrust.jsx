@@ -8,7 +8,6 @@ const Wrapper = styled.div`
     @media screen and (max-width: 600px) {
         flex-direction: column;
     }
-    
 `;
 
 const Right = styled.div`
@@ -75,7 +74,7 @@ export default function IfAndTrust() {
     return (
         <div>
             <Wrapper>
-                <div style={{ flex: "1", display:"flex"}}>
+                <div style={{ flex: "1", display: "flex" }}>
                     <Left>
                         <h4>WHY US?</h4>
                         <ServiceHeader>
@@ -255,6 +254,23 @@ export default function IfAndTrust() {
                             <input
                                 type="checkbox"
                                 name="window-washing"
+                                value="checkboxValue"
+                            />
+                        </CheckList>
+                        <CheckList>
+                            <label
+                                for="exterior-washing"
+                                style={{
+                                    margin: "0px 0px 0px 0px",
+                                    padding: "4px 7px 4px 7px",
+                                    color: "black",
+                                }}
+                            >
+                                Exterior Washing
+                            </label>
+                            <input
+                                type="checkbox"
+                                name="exterior-washing"
                                 value="checkboxValue"
                             />
                         </CheckList>

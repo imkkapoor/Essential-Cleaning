@@ -219,6 +219,23 @@ export default function Pricing() {
                                 value="checkboxValue"
                             />
                         </CheckList>
+                        <CheckList>
+                            <label
+                                for="exterior-washing"
+                                style={{
+                                    margin: "0px 0px 0px 0px",
+                                    padding: "4px 7px 4px 7px",
+                                    color: "black",
+                                }}
+                            >
+                                Exterior Washing
+                            </label>
+                            <input
+                                type="checkbox"
+                                name="exterior-washing"
+                                value="checkboxValue"
+                            />
+                        </CheckList>
                         <select
                             name="how did you hear about us"
                             style={{
