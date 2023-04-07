@@ -12,10 +12,19 @@ const ContainerAllImages = styled.div`
 
 export default function Images() {
     return (
-        <ContainerAllImages>
-            {url_list.map((item) => (
-                <EachImage item={item} />
-            ))}
-        </ContainerAllImages>
+        <div>
+            {/* <video height="400px" autoplay muted>
+                <source
+                    src={main}
+                    type="video/mp4"
+                />
+                Your browser does not support the video tag.
+            </video> */}
+            <ContainerAllImages>
+                {url_list.map((item) => (
+                    <EachImage item={item} />
+                ))}
+            </ContainerAllImages>
+        </div>
     );
 }

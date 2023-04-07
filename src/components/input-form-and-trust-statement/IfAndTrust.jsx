@@ -12,14 +12,16 @@ const Wrapper = styled.div`
 
 const Right = styled.div`
     flex: 1;
+    @media screen and (max-width: 600px) {
+        margin-top: 20px;
+    }
 `;
 
 const InputForm = styled.form`
     display: flex;
-    padding-top: 20px;
     flex-direction: column;
-    margin: 0px 12vw 30px 0vw;
     font-size: 14px;
+    align-items: center;
     @media screen and (max-width: 600px) {
         margin: 10px 10vw 30px 10vw;
     }
@@ -27,7 +29,7 @@ const InputForm = styled.form`
 
 const CheckList = styled.div`
     display: flex;
-    width: 70%;
+    width: 60%;
     justify-content: space-between;
 `;
 
@@ -60,6 +62,7 @@ const ServiceHeader = styled.div`
 
     display: flex;
     align-items: center;
+    justify-content: center;
 `;
 
 const ServiceDescription = styled.div`
@@ -125,6 +128,9 @@ export default function IfAndTrust() {
                     </Left>
                 </div>
                 <Right>
+                    <ServiceHeader style={{ fontSize: "22px" }}>
+                        Get Your Free Estimate Now!
+                    </ServiceHeader>
                     <InputForm
                         action="https://formsubmit.co/office@essentialexteriorcleaning.com"
                         method="POST"
@@ -140,6 +146,7 @@ export default function IfAndTrust() {
                                 padding: "7px",
                                 borderRadius: "2px",
                                 border: "1px solid gray",
+                                width: "80%",
                             }}
                         />
                         <input
@@ -152,6 +159,7 @@ export default function IfAndTrust() {
                                 padding: "7px",
                                 borderRadius: "2px",
                                 border: "1px solid gray",
+                                width: "80%",
                             }}
                         />
                         <input
@@ -163,6 +171,7 @@ export default function IfAndTrust() {
                                 padding: "7px",
                                 borderRadius: "2px",
                                 border: "1px solid gray",
+                                width: "80%",
                             }}
                         />
                         <input
@@ -173,6 +182,7 @@ export default function IfAndTrust() {
                                 padding: "7px",
                                 borderRadius: "2px",
                                 border: "1px solid gray",
+                                width: "80%",
                             }}
                         />
                         <input
@@ -184,6 +194,7 @@ export default function IfAndTrust() {
                                 color: "black",
                                 borderRadius: "2px",
                                 border: "1px solid gray",
+                                width: "80%",
                             }}
                         />
                         <p style={{ padding: "7px", margin: "0" }}>
@@ -282,6 +293,7 @@ export default function IfAndTrust() {
                                 marginBottom: "20px",
                                 borderRadius: "2px",
                                 border: "1px solid gray",
+                                width: "80%",
                             }}
                         >
                             <option value="" selected disabled hidden>
