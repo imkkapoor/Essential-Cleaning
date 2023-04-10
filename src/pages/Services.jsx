@@ -4,14 +4,21 @@ import Footer from "../components/footer/Footer";
 import ChooseUs from "../components/why-us/ChooseUs";
 import NavBarLine from "../components/nav-bar/NavBarLine";
 
-
 const Container = styled.div`
     display: flex;
-    margin: 20px;
-    @media screen and (max-width: 600px) {
+    margin: 60px 150px;
+    @media screen and (max-width: 960px) {
         flex-direction: column;
         text-align: center;
     }
+    background-color: rgb(237, 237, 237);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    @media screen and (max-width: 600px) {
+        margin: 40px 20px;
+    }
+    
 `;
 
 const Description = styled.div`
@@ -20,28 +27,45 @@ const Description = styled.div`
     flex-direction: column;
     justify-content: center;
     padding: 30px;
+    padding-right: 60px;
     font-size: 15px;
+    @media screen and (max-width: 960px) {
+        padding-right: 30px;
+    }
 `;
 const ImageWrapper = styled.div`
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px;
+    margin: 50px;
+    @media screen and (max-width: 960px) {
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
 `;
 const Image = styled.img`
     height: 90vh;
     width: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    :hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    @media screen and (max-width: 720px) {
+        height: 60vh;
+    }
     @media screen and (max-width: 600px) {
         height: 48vh;
     }
+    
 `;
 
 export default function Services() {
     return (
         <>
-            <NavBarLine header = "Services"/>
-            {/* <ServiceHeader>Services</ServiceHeader> */}
+            <NavBarLine header="Services" />
             <Container>
                 <ImageWrapper>
                     <Image src="https://drive.google.com/uc?export=view&id=1MrJzwdfhhw83m2olMbGshTonC109zz5c"></Image>
@@ -55,33 +79,7 @@ export default function Services() {
                     effective way to keep them clean and well-maintained.
                 </Description>
             </Container>
-            {/* <Container>
-                <Image></Image>
-                <Description>
-                    <h3>Window Cleaning</h3>
-                    Professional window cleaning can help enhance the appearance
-                    and overall value of a property, as well as improve the
-                    energy efficiency of a building by allowing more natural
-                    light to enter.
-                    <br></br>
-                    <br></br>
-                    It is an important aspect of property maintenance for both
-                    residential and commercial businesses. This can help prolong
-                    the lifespan of windows and reduce the need for costly
-                    repairs or replacements in the long run. This service
-                    involves the thorough cleaning of all exterior windows, both
-                    glass surfaces and frames using specialized tools,
-                    equipment, and techniques. Professional window cleaners are
-                    trained and experienced in identifying the right cleaning
-                    solution for each type of glass surface, whether it be
-                    traditional glass or modern, energy-efficient glass.
-                    <br></br>
-                    <br></br>
-                    Trust our team to keep your pathways and building exterior
-                    clean and functioning correctly. Contact us today to
-                    schedule your FREE estimate.
-                </Description>
-            </Container> */}
+
             <Container>
                 <ImageWrapper>
                     <Image src="https://drive.google.com/uc?export=view&id=1cl-1T4vlRm7Wl1LWp3yzO9Jsitt4khFx" />
@@ -114,6 +112,46 @@ export default function Services() {
                     Our goal is to provide exceptional service and give you
                     peace of mind knowing your roof is in good hands. Contact us
                     today to schedule your moss removal service!
+                </Description>
+            </Container>
+            <Container>
+                <ImageWrapper>
+                    <Image src="https://drive.google.com/uc?id=1B43NI4Xd7vU6e5AplQVtfVKvKoiUwMfa"></Image>
+                </ImageWrapper>
+                <Description>
+                    <h3>Exterior Cleaning</h3>
+                    Over time, the exterior of your home can become dirty,
+                    stained, and even moldy, which not only looks unattractive
+                    but can also damage the siding. Our team of experts uses
+                    advanced equipment and safe cleaning methods to remove dirt,
+                    grime, and other contaminants from your home's siding,
+                    leaving it looking like new. We understand that every home
+                    is different, which is why we offer customized solutions to
+                    meet your specific needs. Whether you have vinyl, brick,
+                    stucco, or any other type of siding, we have the expertise
+                    to get it clean. Contact us today to schedule your house
+                    washing service and give your home the facelift it deserves!
+                </Description>
+            </Container>
+            <Container>
+                <ImageWrapper>
+                    <Image src="https://drive.google.com/uc?export=view&id=1xL7NUYvKwdz87rbpx6G7FAvCLOefOUKI"></Image>
+                </ImageWrapper>
+                <Description>
+                    <h3>Window Cleaning</h3>
+                    Over time, windows can become dirty, smudged, and stained,
+                    which not only looks unattractive but can also impair your
+                    view and reduce the amount of natural light entering your
+                    home or office. Our team of experts uses specialized tools
+                    and safe cleaning methods to remove dirt, grime, and other
+                    contaminants from your windows, leaving them sparkling clean
+                    and streak-free. We understand that every property is
+                    different, which is why we offer customized solutions to
+                    meet your specific needs. Whether you need window cleaning
+                    for your home, office, or commercial property, we have the
+                    expertise to get the job done. Contact us today to schedule
+                    your window cleaning service and let us enhance the
+                    appearance and comfort of your space.
                 </Description>
             </Container>
             <ChooseUs />

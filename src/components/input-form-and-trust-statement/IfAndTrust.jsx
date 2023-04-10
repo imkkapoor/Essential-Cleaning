@@ -4,15 +4,16 @@ import VerifiedIcon from "@mui/icons-material/Verified";
 
 const Wrapper = styled.div`
     display: flex;
-    margin: 20px 0px;
-    @media screen and (max-width: 600px) {
+    margin: 50px 10px;
+    @media screen and (max-width: 833px) {
         flex-direction: column;
+        margin: 20px 0px;
     }
 `;
 
 const Right = styled.div`
     flex: 1;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 833px) {
         margin-top: 20px;
     }
 `;
