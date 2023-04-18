@@ -203,7 +203,7 @@ export default function IfAndTrust() {
                         </p>
                         <CheckList>
                             <label
-                                for="moss-removal"
+                                htmlFor="moss-removal"
                                 style={{
                                     margin: "0px 0px 0px 0px",
                                     padding: "4px 7px 4px 7px",
@@ -220,7 +220,7 @@ export default function IfAndTrust() {
                         </CheckList>
                         <CheckList>
                             <label
-                                for="pressure-washing"
+                                htmlFor="pressure-washing"
                                 style={{
                                     margin: "0px 0px 0px 0px",
                                     padding: "4px 7px 4px 7px",
@@ -237,7 +237,7 @@ export default function IfAndTrust() {
                         </CheckList>
                         <CheckList>
                             <label
-                                for="gutter-cleaning"
+                                htmlFor="gutter-cleaning"
                                 style={{
                                     margin: "0px 0px 0px 0px",
                                     padding: "4px 7px 4px 7px",
@@ -254,7 +254,7 @@ export default function IfAndTrust() {
                         </CheckList>
                         <CheckList>
                             <label
-                                for="window-washing"
+                                htmlFor="window-washing"
                                 style={{
                                     margin: "0px 0px 0px 0px",
                                     padding: "4px 7px 4px 7px",
@@ -271,7 +271,7 @@ export default function IfAndTrust() {
                         </CheckList>
                         <CheckList>
                             <label
-                                for="exterior-washing"
+                                htmlFor="exterior-washing"
                                 style={{
                                     margin: "0px 0px 0px 0px",
                                     padding: "4px 7px 4px 7px",
@@ -296,8 +296,9 @@ export default function IfAndTrust() {
                                 border: "1px solid gray",
                                 width: "80%",
                             }}
+                            defaultValue={"DEFAULT"}
                         >
-                            <option value="" selected disabled hidden>
+                            <option value="DEFAULT" disabled hidden>
                                 How did you hear about us?
                             </option>
                             <option value="google-earch">Google Search</option>

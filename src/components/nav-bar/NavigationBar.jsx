@@ -16,7 +16,7 @@ const NavBar = styled.div`
     @media screen and (max-width: 600px) {
         flex-direction: column;
     }
-    z-index :200;
+    z-index: 200;
     :hover {
         color: #e6e6e6;
     }
@@ -43,18 +43,17 @@ const Container = styled.div`
     background: url("https://drive.google.com/uc?id=1cj1_TmhFXW5UqNl-Ug4IXONK-mb8IBCP")
         no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 103vh;
     background-position: left;
     position: relative;
     font-size: 20px;
 `;
 
 const OurHeader = styled.div`
-   
     display: flex;
     align-items: center;
     justify-content: center;
- 
+
     z-index: 100;
 `;
 
@@ -80,7 +79,7 @@ const CallUsAt = styled.a`
     padding: 10px;
 
     margin: 10px 0px;
-    
+
     text-decoration: none;
     font-weight: 600;
     @media screen and (max-width: 600px) {
@@ -96,7 +95,7 @@ const TextHeader = styled.div`
     font-size: 32px;
     font-weight: 600;
     color: white;
-    
+
     margin-top: -5vh;
     @media screen and (max-width: 638px) {
         margin-top: 0vh;
@@ -107,9 +106,11 @@ const TextHeader = styled.div`
 const GetYourQuote = styled.div`
     text-align: center;
     margin-top: 4.6vh;
+    display: flex;
+    justify-content: center;
 `;
 
-const GetYourQuoteButton = styled.a`
+const GetYourQuoteButton = styled.div`
     font-size: 20px;
     padding: 10px 16px 10px 16px;
     background-color: #2d5a9b;
@@ -117,6 +118,9 @@ const GetYourQuoteButton = styled.a`
     border-radius: 18px;
     font-weight: 500;
     text-decoration: none;
+    outline: none;
+    border: none;
+    width: auto;
     :hover {
         color: #e6e6e6;
     }
@@ -159,13 +163,17 @@ export default function NavigationBar() {
                         <Left>
                             <Link
                                 to="/"
-                                className={isTransparent ? "transparent-text" : "solid-text"}
+                                className={
+                                    isTransparent
+                                        ? "transparent-text"
+                                        : "solid-text"
+                                }
                                 style={{
                                     textDecoration: "none",
                                     margin: "10px",
                                     display: "flex",
                                     alignItems: "center",
-                                    transition:"background-color 0.5s ease"
+                                    transition: "background-color 0.5s ease",
                                 }}
                             >
                                 Home
@@ -173,13 +181,17 @@ export default function NavigationBar() {
 
                             <Link
                                 to="/services"
-                                className={isTransparent ? "transparent-text" : "solid-text"}
+                                className={
+                                    isTransparent
+                                        ? "transparent-text"
+                                        : "solid-text"
+                                }
                                 style={{
                                     textDecoration: "none",
                                     margin: "10px",
                                     display: "flex",
                                     alignItems: "center",
-                                    transition:"background-color 0.5s ease"
+                                    transition: "background-color 0.5s ease",
                                 }}
                             >
                                 Services
@@ -187,11 +199,15 @@ export default function NavigationBar() {
 
                             <Link
                                 to="/pricing"
-                                className={isTransparent ? "transparent-text" : "solid-text"}
+                                className={
+                                    isTransparent
+                                        ? "transparent-text"
+                                        : "solid-text"
+                                }
                                 style={{
                                     textDecoration: "none",
                                     margin: "10px",
-                                    transition:"background-color 0.5s ease"
+                                    transition: "background-color 0.5s ease",
                                 }}
                             >
                                 Pricing
@@ -199,18 +215,29 @@ export default function NavigationBar() {
 
                             <Link
                                 to="/gallery"
-                                className={isTransparent ? "transparent-text" : "solid-text"}
+                                className={
+                                    isTransparent
+                                        ? "transparent-text"
+                                        : "solid-text"
+                                }
                                 style={{
                                     textDecoration: "none",
                                     margin: "10px",
-                                    transition:"background-color 0.5s ease"
+                                    transition: "background-color 0.5s ease",
                                 }}
                             >
                                 Gallery
                             </Link>
                         </Left>
                         <Right>
-                            <CallUsAt href="tel:2502634283"  className={isTransparent ? "transparent-text" : "solid-text"}>
+                            <CallUsAt
+                                href="tel:2502634283"
+                                className={
+                                    isTransparent
+                                        ? "transparent-text"
+                                        : "solid-text"
+                                }
+                            >
                                 (250) 263-4283
                             </CallUsAt>
                         </Right>
@@ -228,9 +255,14 @@ export default function NavigationBar() {
                 <TextHeader>Refresh your home's first impression</TextHeader>
                 <GetYourQuote>
                     <GetYourQuoteButton>
-                        <Link to="/pricing" style={{
-                                    textDecoration: "none", color:"white"}}>
-                        GET YOUR FREE ESTIMATE
+                        <Link
+                            to="/pricing"
+                            style={{
+                                textDecoration: "none",
+                                color: "white",
+                            }}
+                        >
+                            GET YOUR FREE ESTIMATE
                         </Link>
                     </GetYourQuoteButton>
                 </GetYourQuote>
