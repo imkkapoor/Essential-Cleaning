@@ -40,7 +40,7 @@ export default function About() {
                 Welcome to Essential Exterior Cleaning Victoria, your go-to
                 company for all your exterior cleaning needs. We are a locally
                 owned and operated business dedicated to providing top-quality
-                services to Greater Victoria and surrounding areas.
+                services to Vancouver, Greater Victoria and surrounding areas.
                 <br></br>
                 <br></br>
                 Our team specializes in pressure washing, exterior window
