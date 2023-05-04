@@ -1,6 +1,6 @@
 // import React, { useEffect } from "react";
 import styled from "styled-components";
-import "./EachImage.css";
+// import "./EachImage.css";
 
 const EachImageContainer = styled.div`
     margin: 20px;
