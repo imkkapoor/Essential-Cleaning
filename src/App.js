@@ -5,6 +5,7 @@ import Pricing from "./pages/Pricing";
 import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
 import ScrollToTop from "./components/scroll-behaviour/ScrollToTop";
+
 function App() {
     return (
         <>

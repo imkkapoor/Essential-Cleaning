@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
+import "./EachImage.css";
 
 const EachImageContainer = styled.div`
     margin: 20px;
+    margin-top: 50px;
+    @media screen and (max-width: 930px) {
+        margin-top: 20px;
+    }
 `;
 
 const Image = styled.img`
@@ -18,7 +23,25 @@ const Image = styled.img`
 `;
 
 export default function EachImage({ item }) {
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver((entries) => {
+    //         entries.forEach((entry) => {
+    //             if (entry.isIntersecting) {
+    //                 entry.target.classList.add("show-gallery-banner");
+    //             }
+    //         });
+    //     });
+
+    //     const hiddenBanners = document.querySelectorAll(
+    //         ".hidden-gallery-banner"
+    //     );
+    //     hiddenBanners.forEach((el) => observer.observe(el));
+
+    //     // Clean up the observer when the component unmounts
+    //     return () => observer.disconnect();
+    // }, []);
     return (
+        // <EachImageContainer className="hidden-gallery-banner">
         <EachImageContainer>
             <Image src={item} alt="service-banner" />
         </EachImageContainer>

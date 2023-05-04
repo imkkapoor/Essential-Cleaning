@@ -13,7 +13,7 @@ const NavBar = styled.div`
     top: 0;
     font-weight: 600;
     transition: background-color 0.5s ease;
-    z-index:200;
+    z-index: 200;
     @media screen and (max-width: 600px) {
         flex-direction: column;
     }
@@ -38,7 +38,9 @@ const Container = styled.div`
         flex-direction: column;
     }
     position: relative;
-    background: url("https://drive.google.com/uc?id=1cj1_TmhFXW5UqNl-Ug4IXONK-mb8IBCP")
+    /* background: url("https://drive.google.com/uc?id=1cj1_TmhFXW5UqNl-Ug4IXONK-mb8IBCP")
+        no-repeat; */
+    background: url("https://drive.google.com/uc?id=1jXWsvWaFtoZodEPBlvSrkdqmE-JcD5GZ")
         no-repeat;
     background-size: cover;
     height: 55vh;
@@ -117,13 +119,17 @@ export default function NavBarLine(props) {
                         <NavLeft>
                             <Link
                                 to="/"
-                                className={isTransparent ? "transparent-text" : "solid-text"}
+                                className={
+                                    isTransparent
+                                        ? "transparent-text"
+                                        : "solid-text"
+                                }
                                 style={{
                                     textDecoration: "none",
                                     margin: "10px",
                                     display: "flex",
                                     alignItems: "center",
-                                    transition:"background-color 0.5s ease"
+                                    transition: "background-color 0.5s ease",
                                 }}
                             >
                                 Home
@@ -131,13 +137,17 @@ export default function NavBarLine(props) {
 
                             <Link
                                 to="/services"
-                                className={isTransparent ? "transparent-text" : "solid-text"}
+                                className={
+                                    isTransparent
+                                        ? "transparent-text"
+                                        : "solid-text"
+                                }
                                 style={{
                                     textDecoration: "none",
                                     margin: "10px",
                                     display: "flex",
                                     alignItems: "center",
-                                    transition:"background-color 0.5s ease"
+                                    transition: "background-color 0.5s ease",
                                 }}
                             >
                                 Services
@@ -145,12 +155,16 @@ export default function NavBarLine(props) {
 
                             <Link
                                 to="/pricing"
-                                className={isTransparent ? "transparent-text" : "solid-text"}
+                                className={
+                                    isTransparent
+                                        ? "transparent-text"
+                                        : "solid-text"
+                                }
                                 style={{
                                     textDecoration: "none",
                                     margin: "10px",
-                                   
-                                    transition:"background-color 0.5s ease"
+
+                                    transition: "background-color 0.5s ease",
                                 }}
                             >
                                 Pricing
@@ -158,18 +172,28 @@ export default function NavBarLine(props) {
 
                             <Link
                                 to="/gallery"
-                                className={isTransparent ? "transparent-text" : "solid-text"}
+                                className={
+                                    isTransparent
+                                        ? "transparent-text"
+                                        : "solid-text"
+                                }
                                 style={{
                                     textDecoration: "none",
                                     margin: "10px",
-                                    
                                 }}
                             >
                                 Gallery
                             </Link>
                         </NavLeft>
                         <NavRight>
-                            <CallUsAt href="tel:2502634283" className={isTransparent ? "transparent-text" : "solid-text"}>
+                            <CallUsAt
+                                href="tel:2502634283"
+                                className={
+                                    isTransparent
+                                        ? "transparent-text"
+                                        : "solid-text"
+                                }
+                            >
                                 (250) 263-4283
                             </CallUsAt>
                         </NavRight>

@@ -1,4 +1,12 @@
 export const url_list = [
+    "https://drive.google.com/uc?id=1Sq38vaAtAjzFEoAnrjm4-JFdXmqkOy_W",
+    "https://drive.google.com/uc?id=1q3ZhfUjrij6UaXYXucnsr2SDGt8x16lA",
+    "https://drive.google.com/uc?id=1XCY0JqCX8yhcdqqrEHi_SmVINou2xGDy",
+    "https://drive.google.com/uc?id=1cESG73t-PDcQC-7Dt9mohTdBOuqxDiQL",
+    "https://drive.google.com/uc?id=1CsHY1eor0iF4e3AcYyoV6muQcbd_SlQO",
+    "https://drive.google.com/uc?id=1S0NskWO9rgI3UVS4Jf88LorWYS367yUD",
+    "https://drive.google.com/uc?id=1ue0d2np_2NRXDU0QnnuqknSSKvf2U398",
+    "https://drive.google.com/uc?id=1syNELu-WNltcyzWe1r6P4qCCD-v1BF59",
     "https://drive.google.com/uc?id=1w3fEr41rHl2zejng-Q-6yTSNUGPz2P5L",
     "https://drive.google.com/uc?id=18GUiyqhgYR2_hOabIH_TbGNepBEBqEJS",
     "https://drive.google.com/uc?id=1DUNXKXr57pOHAPGxutMhNE_BYz5XmXdv",
@@ -12,7 +20,4 @@ export const url_list = [
     "https://drive.google.com/uc?id=1Ic2FV1oIDEsypExaH2iHdMxMoGPGBagc",
     "https://drive.google.com/uc?id=1Wc9yywe5V4-Mzu-w01tAmg_zKv8Lm2cX",
     "https://drive.google.com/uc?id=1loxOznayoZQubBBiVhdMbSCFPXkkXOd4",
-    
-
-  
-]
+];

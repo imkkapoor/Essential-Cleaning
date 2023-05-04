@@ -40,7 +40,9 @@ const Container = styled.div`
     @media screen and (max-width: 600px) {
         flex-direction: column;
     }
-    background: url("https://drive.google.com/uc?id=1cj1_TmhFXW5UqNl-Ug4IXONK-mb8IBCP")
+    /* background: url("https://drive.google.com/uc?id=1cj1_TmhFXW5UqNl-Ug4IXONK-mb8IBCP")
+        no-repeat; */
+    background: url("https://drive.google.com/uc?id=1gD3leWYIcq4wmledvbMiYwJ0zhZlMtJy")
         no-repeat;
     background-size: cover;
     height: 103vh;
