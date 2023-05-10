@@ -23,25 +23,9 @@ const Image = styled.img`
 `;
 
 export default function EachImage({ item }) {
-    // useEffect(() => {
-    //     const observer = new IntersectionObserver((entries) => {
-    //         entries.forEach((entry) => {
-    //             if (entry.isIntersecting) {
-    //                 entry.target.classList.add("show-gallery-banner");
-    //             }
-    //         });
-    //     });
 
-    //     const hiddenBanners = document.querySelectorAll(
-    //         ".hidden-gallery-banner"
-    //     );
-    //     hiddenBanners.forEach((el) => observer.observe(el));
-
-    //     // Clean up the observer when the component unmounts
-    //     return () => observer.disconnect();
-    // }, []);
     return (
-        // <EachImageContainer className="hidden-gallery-banner">
+       
         <EachImageContainer>
             <Image src={item} alt="service-banner" />
         </EachImageContainer>
