@@ -139,8 +139,11 @@ const MainWrapper = styled.div`
 
 export default function NavigationBar() {
     const [isTransparent, setIsTransparent] = useState(true);
+ 
+    
 
     useEffect(() => {
+       
         function handleScroll() {
             const scrolled = window.scrollY;
             if (scrolled > 0 && isTransparent) {
