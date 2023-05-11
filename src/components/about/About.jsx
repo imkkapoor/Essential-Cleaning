@@ -37,7 +37,7 @@ export default function About() {
                 About Us
             </h3>
             <Text>
-                Welcome to Essential Exterior Cleaning Victoria, your go-to
+                Welcome to Essential Exterior Cleaning, your go-to
                 company for all your exterior cleaning needs. We are a locally
                 owned and operated business dedicated to providing top-quality
                 services to Vancouver, Greater Victoria and surrounding areas.
