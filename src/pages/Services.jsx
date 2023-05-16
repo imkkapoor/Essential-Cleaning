@@ -18,7 +18,6 @@ const Container = styled.div`
     @media screen and (max-width: 600px) {
         margin: 40px 20px;
     }
-    
 `;
 
 const Description = styled.div`
@@ -46,20 +45,22 @@ const ImageWrapper = styled.div`
 `;
 const Image = styled.img`
     height: 90vh;
-    width: auto;
+    width: 67.66vh;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
+    object-fit: cover;
     :hover {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
     @media screen and (max-width: 720px) {
         height: 60vh;
+        width: 45.11vh;
     }
     @media screen and (max-width: 600px) {
         height: 48vh;
+        width: 36.09vh;
     }
-    
 `;
 
 export default function Services() {
@@ -68,7 +69,7 @@ export default function Services() {
             <NavBarLine header="Services" />
             <Container>
                 <ImageWrapper>
-                    <Image src="https://drive.google.com/uc?export=view&id=1MrJzwdfhhw83m2olMbGshTonC109zz5c"></Image>
+                    <Image src="https://drive.google.com/uc?export=view&id=1db60bnCTF6fnjjEMiJCWFr_c04VkfT7K"></Image>
                 </ImageWrapper>
                 <Description>
                     <h3>Pressure Washing</h3>
@@ -116,7 +117,7 @@ export default function Services() {
             </Container>
             <Container>
                 <ImageWrapper>
-                    <Image src="https://drive.google.com/uc?id=1B43NI4Xd7vU6e5AplQVtfVKvKoiUwMfa"></Image>
+                    <Image src="https://drive.google.com/uc?id=1JW9f2-b62mGr12e28FRCjv8dr2N1GcFH"></Image>
                 </ImageWrapper>
                 <Description>
                     <h3>Exterior Cleaning</h3>
