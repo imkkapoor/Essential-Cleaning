@@ -83,7 +83,7 @@ export default function Pricing() {
                         <br></br>
                         <br></br>
                         <h4>Areas We Work:</h4>
-                        Victoria and surrounding areas!
+                        Vancouver and surrounding areas!
                     </LeftIn>
                 </Left>
                 <Right>
