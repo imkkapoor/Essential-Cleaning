@@ -287,6 +287,7 @@ export default function IfAndTrust() {
                             />
                         </CheckList>
                         <select
+                            required
                             name="how did you hear about us"
                             style={{
                                 margin: "4px 0px",

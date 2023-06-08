@@ -18,17 +18,15 @@ const Left = styled.div`
     justify-content: center;
     align-items: flex-start;
     @media screen and (max-width: 600px) {
-        margin-top:20px;
-        margin-bottom:0px;
+        margin-top: 20px;
+        margin-bottom: 0px;
     }
-
 `;
 
 const LeftIn = styled.div`
     margin: 10px 12vw 30px 12vw;
     @media screen and (max-width: 600px) {
-        
-        margin-bottom:0px;
+        margin-bottom: 0px;
     }
 `;
 const Right = styled.div`
@@ -54,7 +52,7 @@ const Header = styled.div`
     margin-top: 20px;
     margin-right: 5vw;
     @media screen and (max-width: 600px) {
-        display:none;
+        display: none;
     }
 `;
 
@@ -237,6 +235,7 @@ export default function Pricing() {
                             />
                         </CheckList>
                         <select
+                            required
                             name="how did you hear about us"
                             style={{
                                 margin: "4px 0px",
